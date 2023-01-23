@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { Transaction } from './interfaces/transaction.interface';
 
 @Injectable()
 export class TransactionsService {
-  save(data: any) {
-    console.log(data);
-    return data;
+  save(createTransaction: Transaction) {
+    return createTransaction;
   }
 }
